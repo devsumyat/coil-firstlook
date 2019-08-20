@@ -15,6 +15,7 @@ implementation 'io.coil-kt:coil:0.6.1'
 
 # Quick Start
 * basic usage 
+
 // in Glide
 Glide.with(context)
     .load(url)
