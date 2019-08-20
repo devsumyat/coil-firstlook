@@ -14,6 +14,7 @@ import coil.sample.MainViewModel
 import coil.sample.Screen
 import coil.sample.bindView
 import coil.sample.bindViewModel
+import coil.transform.CircleCropTransformation
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -50,6 +51,7 @@ class MainActivity : AppCompatActivity() {
                 list.isVisible = false
                 detail.isVisible = true
                 detail.load(screen.image.url) {
+                    crossfade(true)
                     placeholder(ColorDrawable(screen.image.color))
                 }
             }

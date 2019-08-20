@@ -41,6 +41,7 @@ class ImageListAdapter(
             }
 
             load(item.url) {
+                crossfade(true)
                 placeholder(ColorDrawable(item.color))
             }
 
